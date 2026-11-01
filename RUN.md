@@ -10,6 +10,11 @@ ID: `М3О-104БВ-26/08`, контроль: `304 × 8 = 2432`.
 cd ~/projects/vuz/vpd/laba-1
 ```
 
+Все языки по очереди: `make run-all` или `make`.
+Отдельно: `make c`, `make cpp`, `make python`, `make js`, `make ts`, `make java`,
+`make csharp`, `make fsharp`, `make go`, `make rust`, `make bash`, `make prolog`, `make asm`.
+Удалить результаты сборки: `make clean`. Ниже — команды ручного запуска.
+
 ```bash
 # C — c/main.c
 gcc -Wall -Wextra -pedantic c/main.c -o c/main
