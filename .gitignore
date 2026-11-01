@@ -1,0 +1,14 @@
+/c/main
+/cpp/main
+/rust/main
+/asm/assembler
+*.o
+*.class
+*.exe
+bin/
+obj/
+/typescript/dist/
+node_modules/
+target/
+__pycache__/
+*.pyc
