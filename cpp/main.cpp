@@ -3,7 +3,8 @@
 #include <sstream>
 #include <string>
 
-int main() {
+int main()
+{
     const std::string student_name_ru = "Дмитриев Владимир Викторович";
     const std::string student_name_en = "Vladimir";
     const int student_number = 8;

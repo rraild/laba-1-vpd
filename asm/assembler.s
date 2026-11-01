@@ -1,4 +1,3 @@
-// Linux AArch64, native GNU assembler; puts выводит UTF-8 строку.
 .section .rodata
 message:
     .asciz "Hello to 304 from Vladimir, number 8, group М3О-104БВ-26!"
