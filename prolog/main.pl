@@ -1,6 +1,5 @@
 :- encoding(utf8).
 
-% Исходные данные представлены фактом student/5.
 student('Дмитриев Владимир Викторович', 'Vladimir', 8, 'М3О-104БВ-26', 'Prolog').
 
 control_value(Number, Control) :-
@@ -10,7 +9,6 @@ control_value(Number, Control) :-
 main :-
     student(NameRu, NameEn, Number, Group, Language),
     control_value(Number, Control),
-    % ~d сам задаёт минимум одну цифру, добавляем 0 только для N < 10.
     (Number < 10 -> Prefix = '0' ; Prefix = ''),
     format(atom(StudentID), '~w/~w~d', [Group, Prefix, Number]),
     format('Hello to 304 from ~w, number ~d, group ~w!~n', [NameEn, Number, Group]),
