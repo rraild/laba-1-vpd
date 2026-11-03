@@ -8,12 +8,12 @@ run-all: c cpp python js ts java csharp fsharp go rust bash prolog asm
 
 c:
 	@echo "===== C ====="
-	@gcc -Wall -Wextra -pedantic c/main.c -o c/main
+	@gcc c/main.c -o c/main
 	@./c/main
 
 cpp:
 	@echo "===== C++ ====="
-	@g++ -Wall -Wextra -pedantic cpp/main.cpp -o cpp/main
+	@g++ cpp/main.cpp -o cpp/main
 	@./cpp/main
 
 python:
@@ -26,7 +26,7 @@ js:
 
 ts:
 	@echo "===== TypeScript ====="
-	@tsc --strict --target ES2017 --outDir typescript/dist typescript/main.ts
+	@tsc --target ES2017 --outDir typescript/dist typescript/main.ts
 	@node typescript/dist/main.js
 
 java:
@@ -36,11 +36,11 @@ java:
 
 csharp:
 	@echo "===== C# ====="
-	@dotnet run --project csharp/Lab.csproj --verbosity quiet
+	@dotnet run --project csharp/Lab.csproj
 
 fsharp:
 	@echo "===== F# ====="
-	@dotnet run --project fsharp/Lab.fsproj --verbosity quiet
+	@dotnet run --project fsharp/Lab.fsproj
 
 go:
 	@echo "===== Go ====="
@@ -57,7 +57,7 @@ bash:
 
 prolog:
 	@echo "===== Prolog ====="
-	@swipl -q -s prolog/main.pl -g main -t halt
+	@swipl -s prolog/main.pl -g main -t halt
 
 asm:
 	@echo "===== Assembler (Linux AArch64) ====="

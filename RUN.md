@@ -17,11 +17,11 @@ cd ~/projects/vuz/vpd/laba-1
 
 ```bash
 # C — c/main.c
-gcc -Wall -Wextra -pedantic c/main.c -o c/main
+gcc c/main.c -o c/main
 ./c/main
 
 # C++ — cpp/main.cpp
-g++ -Wall -Wextra -pedantic cpp/main.cpp -o cpp/main
+g++ cpp/main.cpp -o cpp/main
 ./cpp/main
 
 # Python — python/main.py
@@ -31,20 +31,20 @@ python3 python/main.py
 node javascript/main.js
 
 # TypeScript — typescript/main.ts
-tsc --strict --target ES2017 --outDir typescript/dist typescript/main.ts
+tsc --target ES2017 --outDir typescript/dist typescript/main.ts
 node typescript/dist/main.js
 
 # Java — java/Main.java
 javac -encoding UTF-8 java/Main.java
 java -cp java Main
-ls -l java/Main.class
+ls java/Main.class
 javap -c -classpath java Main
 
 # C# — csharp/Program.cs
-dotnet run --project csharp/Lab.csproj --verbosity quiet
+dotnet run --project csharp/Lab.csproj
 
 # F# — fsharp/Program.fs
-dotnet run --project fsharp/Lab.fsproj --verbosity quiet
+dotnet run --project fsharp/Lab.fsproj
 
 # Go — go/main.go
 go run go/main.go
@@ -57,7 +57,7 @@ rustc rust/main.rs -o rust/main
 bash bash/main.sh
 
 # Prolog — prolog/main.pl
-swipl -q -s prolog/main.pl -g main -t halt
+swipl -s prolog/main.pl -g main -t halt
 
 # Assembler — asm/assembler.s (Linux AArch64, GNU as + GCC)
 as asm/assembler.s -o asm/assembler.o
